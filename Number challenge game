@@ -1,0 +1,18 @@
+print("===NUMBER CHALLENGE===")
+fix_number=25
+attempts=0
+while True :
+          num=int(input("enter the number btw 1 and 50="))
+          if  num< 1 or  num>50:
+              print("please enter number btw 1 and 50")
+              continue
+          attempts=attempts+1
+          if  num ==fix_number:
+              print("congratulation")
+              print(f"you found the number in {attempts} attempts")
+              break
+          elif num <fix_number:
+               print("too low")
+          else:
+               print('too high')
+          print("GAME OVER")
